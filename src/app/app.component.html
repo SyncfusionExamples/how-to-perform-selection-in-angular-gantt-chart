@@ -1,0 +1,11 @@
+<button ejs-button style="margin-bottom: 20px;"
+   (click)="onClick()">View Row Details</button>
+<ejs-gantt #ganttObj height="490px"
+    [dataSource]="data"
+    [taskFields]="taskSettings"
+    [columns]="columnSettings"
+    (rowSelecting)="preventRowSelection($event)"
+    [selectionSettings]="selectionSettings"
+    (cellSelecting)="preventCellSelection($event)"
+    [allowSorting]="true">
+</ejs-gantt>
