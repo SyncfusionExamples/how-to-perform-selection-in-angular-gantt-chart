@@ -1,16 +1,61 @@
-# how-to-perform-selection-in-angular-gantt-chart
-A quickstart Angular project that shows how to enable or disable selection in Syncfusion Angular Gantt Chart, different modes, types, and selection at initial rendering and programmatically on cells and rows.  It also shows how to disable selection on a particular record and clear all the selections at runtime in the Gantt Chart.
+# Angular Gantt Selection Demo
 
-Refer to the following documentation to learn about the Angular Gantt Chart component:
+This repository contains a sample Angular app demonstrating selection in the Syncfusion Angular Gantt component.
 
-https://ej2.syncfusion.com/angular/documentation/gantt/selection/selection
+## Features
 
-Check out this online example of the Angular Gantt Chart Component:
+- Syncfusion Gantt integration in Angular
+- Row and cell selection enabled
+- Multiple selection with toggle support
+- Persist selection across refresh
+- Custom selection rules for a row and a cell
 
-https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/selection
+## What this app shows
 
-Make sure that you have the latest versions of NodeJS and Visual Studio Code in your machine before starting to work on this project.
+The app configures the Gantt chart with:
 
-### How to run this application?
-To run this application, you need to clone the `how-to-perform-selection-in-angular-gantt-chart` repository and then open it in Visual Studio Code. Now, simply install all the necessary angular packages into your current project using the `npm install` command and run your project using the `ng serve` command.
+- `selectionSettings.mode = 'Both'`
+- `selectionSettings.type = 'Multiple'`
+- `selectionSettings.enableToggle = true`
+- `selectionSettings.persistSelection = true`
+
+It also blocks selection for `TaskID === 4`:
+
+- row selection prevented
+- cell selection prevented for index `1`
+
+A button logs selected rows and records to the console.
+
+## Prerequisites
+
+- Node.js
+- npm
+
+## Install and run
+
+```bash
+npm install
+npm start
+```
+
+Open `http://localhost:4200`.
+
+## Dependencies
+
+- Angular 19
+- `@syncfusion/ej2-angular-gantt`
+- `@syncfusion/ej2-angular-buttons`
+- `@syncfusion/ej2-material-theme`
+
+## Notes
+
+- Data is imported from `src/data.ts`
+- Uses `@ViewChild('ganttObj')` for the Gantt API
+- Selection examples are included in `app.component.ts`
+- Sorting is enabled with `[allowSorting]="true"`
+
+## Resources
+
+- Documentation: https://ej2.syncfusion.com/angular/documentation/gantt/selection/selection
+- Demo: https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/selection
 
