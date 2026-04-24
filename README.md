@@ -1,35 +1,36 @@
 # Angular Gantt Selection Demo
 
-This repository contains a sample Angular app demonstrating selection in the Syncfusion Angular Gantt component.
+A sample Angular application demonstrating row and cell selection behavior in the Syncfusion Angular Gantt Chart component.
+
+## Repository Description
+
+This repository provides an Angular example showing how to configure and control selection features in the Syncfusion Gantt Chart, including multiple selection modes, persisted selection, and custom selection rules.
 
 ## Features
 
-- Syncfusion Gantt integration in Angular
-- Row and cell selection enabled
-- Multiple selection with toggle support
-- Persist selection across refresh
-- Custom selection rules for a row and a cell
+- Syncfusion Angular Gantt integration
+- Row and cell selection support
+- Multiple selection with toggle behavior
+- Persisted selection across refresh
+- Custom logic to prevent selection for specific rows and cells
 
-## What this app shows
+## Selection Configuration
 
-The app configures the Gantt chart with:
+The Gantt chart is configured with the following selection options:
 
 - `selectionSettings.mode = 'Both'`
 - `selectionSettings.type = 'Multiple'`
 - `selectionSettings.enableToggle = true`
 - `selectionSettings.persistSelection = true`
 
-It also blocks selection for `TaskID === 4`:
+## Getting Started
 
-- row selection prevented
-- cell selection prevented for index `1`
+### Prerequisites
 
-A button logs selected rows and records to the console.
-
-## Prerequisites
-
-- Node.js
+- Node.js (LTS or later)
 - npm
+- Angular CLI
+
 
 ## Install and run
 
@@ -39,13 +40,6 @@ npm start
 ```
 
 Open `http://localhost:4200`.
-
-## Dependencies
-
-- Angular 19
-- `@syncfusion/ej2-angular-gantt`
-- `@syncfusion/ej2-angular-buttons`
-- `@syncfusion/ej2-material-theme`
 
 ## Notes
 
@@ -57,5 +51,5 @@ Open `http://localhost:4200`.
 ## Resources
 
 - Documentation: https://ej2.syncfusion.com/angular/documentation/gantt/selection/selection
-- Demo: https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/selection
+- Online Demo: https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/selection
 
