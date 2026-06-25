@@ -1,14 +1,14 @@
 # Angular Gantt Selection Demo
 
-A sample Angular application demonstrating row and cell selection behavior in the Syncfusion Angular Gantt Chart component.
+A sample Angular application demonstrating row and cell selection behavior in the [Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart) component.
 
 ## Repository Description
 
-This repository provides an Angular example showing how to configure and control selection features in the Syncfusion Gantt Chart, including multiple selection modes, persisted selection, and custom selection rules.
+This repository provides an Angular example showing how to configure and control selection features in the Angular Gantt Chart, including multiple selection modes, persisted selection, and custom selection rules.
 
 ## Features
 
-- Syncfusion Angular Gantt integration
+- Angular Gantt integration
 - Row and cell selection support
 - Multiple selection with toggle behavior
 - Persisted selection across refresh
@@ -48,8 +48,11 @@ Open `http://localhost:4200`.
 - Selection examples are included in `app.component.ts`
 - Sorting is enabled with `[allowSorting]="true"`
 
-## Resources
+## Related Links
 
-- Documentation: https://ej2.syncfusion.com/angular/documentation/gantt/selection/selection
-- Online Demo: https://ej2.syncfusion.com/angular/demos/#/fluent2/gantt/selection
-
+- [Explore Angular Gantt Chart](https://www.syncfusion.com/angular-components/angular-gantt-chart)
+- [Gantt Selection Documentation](https://ej2.syncfusion.com/angular/documentation/gantt/selection/selection)
+- [Gantt Chart Feature Overview](https://ej2.syncfusion.com/angular/documentation/gantt/overview)
+- [Angular Gantt Chart Getting Started Guide](https://ej2.syncfusion.com/angular/documentation/gantt/getting-started)
+- [Gantt API Documentation](https://ej2.syncfusion.com/angular/documentation/api/gantt/index-default#allowselection)
+- [Gantt Chart Live Demos and Examples](https://ej2.syncfusion.com/angular/demos/#/tailwind3/gantt/selection)
